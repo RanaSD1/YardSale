@@ -32,58 +32,53 @@
             font-size: 62.5%;
         }
 
-        body
-        {
-            width: 100%;
-            height: 100vh;
-        }
-
         .login
         {
-            /* Zize */
-            width: 320px;
-            height: auto;
-            
-            /* postition */
+            /* Size */
+            width: 100%;
+            height: 100vh;
+
+            /* Position */
             display: grid;
-            justify-items: center;
+            place-items: center;
         }
 
-        .login .login-logo
+        .login-container
         {
-            width: 180px;
-        }
+            /* Size */
+            width: 320px;
 
-        .login .login-container
-        {
+            /* Position */
             display: flex;
             flex-direction: column;
-            margin-top: 50px;
-        }
-
+            align-items: center;
+        }   
+        
     </style>
 </head>
 <body>
+
     <div class="login">
-        <img class="login-logo" src="assets/img/logo_yard_sale.svg" alt="logo de yarsale">
-        
         <div class="login-container">
-            <div class="">
-                <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="camilayokoo@gmail.com">
-
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="************">
-            </div>
+            <img class="login-logo" src="assets/img/logo_yard_sale.svg" alt="logo de yarsale">
         
-            <input type="submit" value="Log in">
-
-            <a href="">Forgot my password</a>
-            <button>
-                Sign up
-            </button>
+            <div class="">
+                <div class="">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="camilayokoo@gmail.com">
+    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="************">
+                </div>
+            
+                <input type="submit" value="Log in">
+    
+                <a href="">Forgot my password</a>
+                <button>
+                    Sign up
+                </button>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
